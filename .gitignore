@@ -1,0 +1,6 @@
+package-lock.json
+node_modules/
+framework-movie-practice-0.md
+compiled/
+.DS_Store
+.eslintrc.js
