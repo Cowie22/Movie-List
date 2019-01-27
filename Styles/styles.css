@@ -1,0 +1,5 @@
+
+.movieListEntry {
+  display: flex;
+  flex-direction: row;
+}

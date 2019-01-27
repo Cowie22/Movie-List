@@ -1,4 +1,4 @@
-var Movies = [
+var movies = [
   {title: 'Mean Girls'},
   {title: 'Hackers'},
   {title: 'The Grey'},
@@ -6,4 +6,4 @@ var Movies = [
   {title: 'Ex Machina'},
 ];
 
-export default Movies
+export default movies
