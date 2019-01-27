@@ -1,5 +1,5 @@
 import MovieList from './Movie-List.js';
-import movies from '../Data/MovieListExampleData.js'
+import movies from '../Data/MovieListExampleData.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -9,12 +9,13 @@ class App extends React.Component {
     }
   }
   render() {
-    const { movieList } = this.state
+    const { movieList } = this.state;
     return (
       <div>
-        <MovieList movies={movieList}/>
+      <h1 className='title'>MOVIE LIST</h1>
+        <MovieList movies={movieList} />
       </div>
-    )
+    );
   }
 }
 

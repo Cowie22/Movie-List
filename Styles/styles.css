@@ -1,5 +1,17 @@
-
+body {
+  max-width: 500;
+  max-height: 500;
+  border: solid black;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
 .movieListEntry {
   display: flex;
   flex-direction: row;
+  height: 100px;
+  border: 1px solid rgb(15, 86, 194);
 }
