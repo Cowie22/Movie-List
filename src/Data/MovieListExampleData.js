@@ -6,4 +6,3 @@ var movies = [
   {title: 'Ex Machina'},
 ];
 
-export default movies
