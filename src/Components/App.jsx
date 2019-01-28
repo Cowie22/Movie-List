@@ -18,25 +18,28 @@ class App extends React.Component {
     this.addMovieHandler = this.addMovieHandler.bind(this);
     this.currentState = this.state.movieList;
   }
+  // State handling functions for input fields
+  addMovieHandler(event) {
+    this.setState({add: event.target.value});
+  }
   handleSearch(event) {
     this.setState({search: event.target.value});
   }
+  // Button handling functions
   handleAddButton(event) {
     event.preventDefault();
     this.addList(this.state.add);
   }
-  addMovieHandler(event) {
-    this.setState({add: event.target.value});
+  handleGoButton(event) {
+    event.preventDefault();
+    this.filterList(this.state.search);
   }
+  // Data functions (filter, etc.)
   addList(event) {
     if (event.length > 0) {
       userData.push({title: event});
     }
     this.setState({movieList: userData});
-  }
-  handleGoButton(event) {
-    event.preventDefault();
-    this.filterList(this.state.search);
   }
   filterList(event) {
     let searchValue = this.state.search;
