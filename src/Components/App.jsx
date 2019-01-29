@@ -64,7 +64,7 @@ class App extends React.Component {
   }
   filterWatched(event) {
     var filterWatch = userData.filter((movie, i) => {
-       return movie.watched === true;
+       return movie.watched === false;
     })
     this.setState({movieList: filterWatch})
   }
@@ -72,9 +72,15 @@ class App extends React.Component {
     event.preventDefault();
     this.filterWatched(this.state.watched)
   }
+  filterNotWatched(event) {
+    var filterWatch = userData.filter((movie, i) => {
+      return movie.watched === true;
+   })
+   this.setState({movieList: filterWatch})
+  }
   handleFilterNotWatched(event) {
     event.preventDefault();
-    this.filterWatched(!this.state.watched)
+    this.filterNotWatched(this.state.watched)
   }
   render() {
     const { movieList, search, add } = this.state;
