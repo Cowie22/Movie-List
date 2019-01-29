@@ -15,3 +15,11 @@ body {
   height: 100px;
   border: 1px solid rgb(15, 86, 194);
 }
+.watchBTN {
+  background-color: rgb(28, 224, 28);
+  margin-left: 82%;
+  height: 60px;
+  width: 100px;
+  color: white;
+  margin-top: 20px;
+}
